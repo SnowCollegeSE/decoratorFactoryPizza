@@ -2,7 +2,6 @@ package headfirst.designpatterns.factory.pizzaaf;
 
 public class Eggplant extends Pizza {
 	
-	@SuppressWarnings("unused")
 	private Pizza myPizza;
 	
 	Eggplant(Pizza toBeDecoratedPizza) {

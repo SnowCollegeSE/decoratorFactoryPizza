@@ -11,12 +11,12 @@ class pizzaCostTest {
 	@CsvSource({
 		"6.75, Cheese",
 		"9.00, ChicagoSpecial",
-		"6.85, theThree",
-		//"11.00, ThinCrustDough,PlumTomatoSauce,ReggianoCheese,RedPepper",
-		//"4.00, NYCheese",
-		//"1.00, NYThinCrustDough,PlumTomatoSauce,ReggianoCheese,RedPepper",
-		//"2.00, NYSpecial",
-		//"3.00, NYThickCrustDough,MarinaraSauce,MozzarellaCheese,Mushroom"
+		"6.85, third",
+		"6.30, fourth",
+		"6.75, NYCheese",
+		"7.70, NYSpecial",
+		"6.85, fifth",
+		"6.30, sixth"
 		
 	})
 	void test(double testCost, String pizzaWanted) {
@@ -34,11 +34,11 @@ class pizzaCostTest {
 			testPizza = chicagoPizzaStore.createPizza("ChicagoSpecial");
 			assertEquals(testCost, testPizza.getCost(), .002);
 			break;
-		case "theThree":
+		case "third":
 			testPizza = chicagoPizzaStore.createPizza("ThickCrustDough,MarinaraSauce,MozzarellaCheese,Mushroom");
 			assertEquals(testCost, testPizza.getCost(), .002);
 			break;
-		case "theFour":
+		case "fourth":
 			testPizza = chicagoPizzaStore.createPizza("ThinCrustDough,PlumTomatoSauce,ReggianoCheese,RedPepper");
 			assertEquals(testCost, testPizza.getCost(), .002);
 			break;
@@ -50,11 +50,11 @@ class pizzaCostTest {
 			testPizza = nyPizzaStore.createPizza("NYSpecial");
 			assertEquals(testCost, testPizza.getCost(), .002);
 			break;
-		case "NYThickCrustDough,MarinaraSauce,MozzarellaCheese,Mushroom":
+		case "fifth":
 			testPizza = nyPizzaStore.createPizza("ThickCrustDough,MarinaraSauce,MozzarellaCheese,Mushroom");
 			assertEquals(testCost, testPizza.getCost(), .002);
 			break;
-		case "NYThinCrustDough,PlumTomatoSauce,ReggianoCheese,RedPepper":
+		case "sixth":
 			testPizza = nyPizzaStore.createPizza("ThinCrustDough,PlumTomatoSauce,ReggianoCheese,RedPepper");
 			assertEquals(testCost, testPizza.getCost(), .002);
 			break;

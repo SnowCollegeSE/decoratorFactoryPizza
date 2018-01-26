@@ -9,7 +9,7 @@ public class ThinCrustDough extends Pizza {
 	}
 	
 	public double getCost() {
-		return .10 + myPizza.getCost();
+		return 1.00 + myPizza.getCost();
 	}
 	
 	public String toString() {

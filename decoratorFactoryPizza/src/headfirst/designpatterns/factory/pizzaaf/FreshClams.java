@@ -2,7 +2,6 @@ package headfirst.designpatterns.factory.pizzaaf;
 
 public class FreshClams extends Pizza {
 	
-	@SuppressWarnings("unused")
 	private Pizza myPizza;
 	
 	FreshClams(Pizza toBeDecoratedPizza) {

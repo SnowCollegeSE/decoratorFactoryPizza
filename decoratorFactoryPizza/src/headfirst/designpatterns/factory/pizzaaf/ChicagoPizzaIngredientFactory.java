@@ -106,6 +106,7 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 				break;
 			case "ThinCrustDough":
 				myPizza = new ThinCrustDough(myPizza);
+				break;
 			default:
 				System.out.println("Invalid string parsed for pizza toppings, or case isn't working. Please debug.");
 			}
